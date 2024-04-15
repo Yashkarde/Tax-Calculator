@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="header"><h3>Tax Calculator</h2></div>
+    <div class="container">
+       
+        <div class="box">
+            <h2>Tax-Calculator</h2>
+            <form action="#">
+               <div class="label-input">
+                <label for="anual-income" >Enter gross annual income</label>
+                <i id="questionMark1" class="fa-regular fa-circle-question" data-message="Gross annual income in your total salary in a year before any deduction"></i>
+                <br>
+                <input type="text" id="anual-income" placeholder="Enter gross annual income">
+                <i class="fa-solid fa-circle-exclamation" id="error-icon1" data-message="Please enter numbers only"></i>
+              </div> 
+              <div class="label-input">
+                <label for="extra-income">Enter extra income</label>
+                <i id="questionMark2" class="fa-regular fa-circle-question" data-message="Extra Income From Your Other Source of Income"></i>
+                <br>
+                <input type="text" id="extra-income" placeholder="Enter extra income">
+                <i class="fa-solid fa-circle-exclamation" id="error-icon2" data-message="Please enter numbers only"></i>
+             </div>
+             <div class="label-input">
+                <label for="age">Enter age group</label>
+                <i id="questionMark3" class="fa-regular fa-circle-question" data-message="Select Age for Calculate Taxable Amount"></i>
+                <br>
+                <select id="age">
+                    <option value="" selected></option>
+                    <option value="<40">&lt; 40</option>
+                    <option value="40-60">≥ 40 &amp; &lt; 60</option>
+                    <option value="≥60">≥ 60</option>
+                </select>
+             </div>
+             <div class="label-input">
+                <label for="total-aplicable">Enter total aplicable deductions</label>
+                <i id="questionMark4" class="fa-regular fa-circle-question" data-message="Gross Deduction Amount ( Total expense Amount)"></i>
+                <br>
+                <input type="text" id="total-aplicable" placeholder="Enter total aplicable deductions">
+                <i class="fa-solid fa-circle-exclamation" id="error-icon3" data-message="Please enter numbers only"></i>
+             </div>
+             <button>Submit</button>
+            </form>
+            </div>
+            <div class="output-page">
+                <div class="o-p-heading"><h1>Your overall income will be</h1></div>
+                <div class="ans"><h2></h2></div>
+                <div id="tax-dedecation"><h4>after tax deductions</h5></div>
+                <button id="close">Close</button>
+            </div>  
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
