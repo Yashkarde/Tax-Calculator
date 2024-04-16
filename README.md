@@ -30,10 +30,7 @@ Welcome to the Tax Calculator, your handy tool for estimating your net income af
 ## Installation 🚀
 
 1. **Clone the Repository**:
-git clone https:https://github.com/Yashkarde/Tax-Calculator
-
-markdown
-Copy code
+git clone https:https:(https://mellifluous-sundae-0b4d12.netlify.app)
 
 2. **Open the Calculator**:
 - Open the `index.html` file in your preferred web browser.
