@@ -144,7 +144,7 @@ tipmsg3.forEach(icon => {
     });
 });
 
-
+const inputFields = document.querySelectorAll("input");
 
 // Adding event listener to the submit button
 submitButton.addEventListener("click", () => {
@@ -207,6 +207,3 @@ function showError(inputElement, message) {
 closeButton.addEventListener("click", () => {
     answerBox.style.display = "none";
 });
-
-
-
